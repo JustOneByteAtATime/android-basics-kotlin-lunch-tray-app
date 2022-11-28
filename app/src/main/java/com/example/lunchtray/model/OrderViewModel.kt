@@ -161,9 +161,22 @@ class OrderViewModel : ViewModel() {
     private fun updateSubtotal(itemPrice: Double) {
         // TODO: if _subtotal.value is not null, update it to reflect the price of the recently
         //  added item.
-        //  Otherwise, set _subtotal.value to equal the price of the item.
+        // If _subtotal is not null, add the itemPrice to the _subtotal.
+        if(_subtotal.value != null)
+        {
+            _subtotal.value = _subtotal.value!! + itemPrice
+            // again, needed double-bang to _subtotal.value to perform non-null asserted call
+        }
 
+        //  TODO: Otherwise, set _subtotal.value to equal the price of the item.
+        // Otherwise, if _subtotal is null, set the _subtotal to the itemPrice.
+        else{
+            _subtotal.value = itemPrice
+        }
         // TODO: calculate the tax and resulting total
+        // After _subtotal has been set (or updated), call calculateTaxAndTotal() so that these
+        // values are updated to reflect the new subtotal.
+        calculateTaxAndTotal()
     }
 
     /**
@@ -171,7 +184,11 @@ class OrderViewModel : ViewModel() {
      */
     fun calculateTaxAndTotal() {
         // TODO: set _tax.value based on the subtotal and the tax rate.
+        // Set the _tax equal to the tax rate times the subtotal.
+        _tax.value = taxRate * _subtotal.value!!
         // TODO: set the total based on the subtotal and _tax.value.
+        // Set the _total equal to the subtotal plus the tax.
+        _total.value = _subtotal.value!! + _tax.value!!
     }
 
     /**
@@ -179,5 +196,30 @@ class OrderViewModel : ViewModel() {
      */
     fun resetOrder() {
         // TODO: Reset all values associated with an order
+        // resetOrder() will be called when the user submits or cancels an order. You want to make
+        // sure your app doesn't have any data left over when the user starts a new order.
+        // Implement resetOrder() by setting all the variables that you modified in OrderViewModel
+        // back to their original value (either 0.0 or null).
+        // Should be done for all variables and values in this viewModel.  Tax rate seems like it
+        // should stay the same, unless a UI controller tells us to change it based on a different
+        // locale
+
+        previousEntreePrice = 0.0
+        previousSidePrice = 0.0
+        previousAccompanimentPrice = 0.0
+        _entree.value = null
+        // entree, side, and accompaniment error with doubles.  These are of type menuItem so we
+        // need to use null as the reset "value" for each
+        _side.value = null
+        _accompaniment.value = null
+        // Still need to reset subtotal, total, and tax with numerical "values"
+        _subtotal.value = 0.0
+        _total.value = 0.0
+        _tax.value = 0.0
+        // After this work is completed, we move to the 4 layout files and implement data binding
+        // Must complete TODOs in order to set text and click listeners  Don't forget the checkout.xml
     }
 }
+
+
+
