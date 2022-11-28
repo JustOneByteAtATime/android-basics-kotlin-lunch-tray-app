@@ -29,8 +29,12 @@
     <string name="order_summary">Order Summary</string>
     <string name="submit">Submit Order</string>
     <string name="submit_order">Order Submitted!</string>
-    <string name="cauliflower">Cauliflower</string>
-    <string name="chili">Chili</string>
+    <string name="cauliflower">Roasted Cauliflower</string>
+    <string name="chili">Chili con Carne</string>
     <string name="pasta">Pasta</string>
-    <string name="skillet">Skillet</string>
+    <string name="skillet">Locally Foraged Skillet</string>
+    <string name="salad">Garden Salad</string>
+    <string name="soup">Soup du Jour</string>
+    <string name="potatoes">Potatoes</string>
+    <string name="rice">Sticky Rice</string>
 </resources>
