@@ -37,4 +37,7 @@
     <string name="soup">Soup du Jour</string>
     <string name="potatoes">Potatoes</string>
     <string name="rice">Sticky Rice</string>
+    <string name="bread">Bread</string>
+    <string name="berries">Mixed Berries</string>
+    <string name="pickles">Coleslaw</string>
 </resources>

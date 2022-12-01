@@ -162,6 +162,7 @@ class OrderViewModel : ViewModel() {
         // TODO: if _subtotal.value is not null, update it to reflect the price of the recently
         //  added item.
         // If _subtotal is not null, add the itemPrice to the _subtotal.
+        // Seemed like a great place for an elvis operator, but since subtotal.value is liveData, it's a pain
         if(_subtotal.value != null)
         {
             _subtotal.value = _subtotal.value!! + itemPrice
