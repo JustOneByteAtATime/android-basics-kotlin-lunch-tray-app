@@ -79,7 +79,7 @@ class EntreeMenuFragment : Fragment() {
         // TODO: Reset order in view model - DONE
         sharedViewModel.resetOrder()
         // TODO: Navigate back to the [StartFragment] to start over - DONE
-        findNavController().navigate(R.id.action_entreeMenuFragment_to_startOrderFragment)
+        findNavController().navigate(R.id.action_entreeMenuFragment_to_startOrder)
     }
 
     /**

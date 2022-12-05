@@ -48,7 +48,7 @@ class StartOrderFragment : Fragment() {
         // Navigate to entree menu
         binding.startOrderBtn.setOnClickListener {
             // TODO: navigate to the EntreeMenuFragment - DONE
-            findNavController().navigate(R.id.action_startOrderFragment_to_entreeMenuFragment)
+            findNavController().navigate(R.id.action_startOrder_to_entreeMenuFragment)
         }
         return root
     }

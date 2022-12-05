@@ -80,7 +80,7 @@ class AccompanimentMenuFragment : Fragment() {
         // TODO: Reset order in view model - DONE
         sharedViewModel.resetOrder()
         // TODO: Navigate back to the [StartFragment] to start over - DONE
-        findNavController().navigate(R.id.action_accompanimentMenuFragment_to_startOrderFragment)
+        findNavController().navigate(R.id.action_accompanimentMenuFragment_to_startOrder)
     }
 
     /**
