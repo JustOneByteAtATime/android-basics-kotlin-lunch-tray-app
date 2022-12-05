@@ -189,7 +189,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/divider"
                 tools:text="Subtotal $5.00"
-                android:text="@{@string/subtotal(viewModel.subtotal)}"/>
+                android:text="@{@string/subtotal(viewModel.subtotal)}"
+                />
             <!-- Used Cupcake layout files as a template for the above text setter -->
 
             <!-- TODO: cancel the order when clicked -->

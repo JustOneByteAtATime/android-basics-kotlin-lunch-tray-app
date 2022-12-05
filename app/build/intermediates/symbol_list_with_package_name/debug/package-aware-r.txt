@@ -2625,7 +2625,7 @@ id actionDown
 id actionDownUp
 id actionUp
 id action_accompanimentMenuFragment_to_checkoutFragment
-id action_accompanimentMenuFragment_to_startOrderFragment
+id action_accompanimentMenuFragment_to_startOrder
 id action_bar
 id action_bar_activity_content
 id action_bar_container
@@ -2633,12 +2633,12 @@ id action_bar_root
 id action_bar_spinner
 id action_bar_subtitle
 id action_bar_title
-id action_checkoutFragment_to_startOrderFragment
+id action_checkoutFragment_to_startOrder
 id action_container
 id action_context_bar
 id action_divider
 id action_entreeMenuFragment_to_sideMenuFragment
-id action_entreeMenuFragment_to_startOrderFragment
+id action_entreeMenuFragment_to_startOrder
 id action_image
 id action_menu_divider
 id action_menu_presenter
@@ -2646,8 +2646,8 @@ id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
 id action_sideMenuFragment_to_accompanimentMenuFragment
-id action_sideMenuFragment_to_startOrderFragment
-id action_startOrderFragment_to_entreeMenuFragment
+id action_sideMenuFragment_to_startOrder
+id action_startOrder_to_entreeMenuFragment
 id action_text
 id actions
 id activity_chooser_view_content
@@ -2846,7 +2846,6 @@ id layout
 id layout_accompaniment_menu
 id layout_checkout
 id layout_side_menu
-id layout_start_order
 id left
 id leftToRight
 id legacy
@@ -3053,7 +3052,7 @@ id src_over
 id standard
 id start
 id startHorizontal
-id startOrderFragment
+id startOrder
 id startToEnd
 id startVertical
 id start_order_btn

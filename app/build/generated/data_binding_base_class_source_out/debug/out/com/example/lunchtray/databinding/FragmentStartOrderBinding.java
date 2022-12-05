@@ -20,15 +20,15 @@ public final class FragmentStartOrderBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final ConstraintLayout layoutStartOrder;
+  public final ConstraintLayout startOrder;
 
   @NonNull
   public final Button startOrderBtn;
 
   private FragmentStartOrderBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ConstraintLayout layoutStartOrder, @NonNull Button startOrderBtn) {
+      @NonNull ConstraintLayout startOrder, @NonNull Button startOrderBtn) {
     this.rootView = rootView;
-    this.layoutStartOrder = layoutStartOrder;
+    this.startOrder = startOrder;
     this.startOrderBtn = startOrderBtn;
   }
 
@@ -59,7 +59,7 @@ public final class FragmentStartOrderBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      ConstraintLayout layoutStartOrder = (ConstraintLayout) rootView;
+      ConstraintLayout startOrder = (ConstraintLayout) rootView;
 
       id = R.id.start_order_btn;
       Button startOrderBtn = ViewBindings.findChildViewById(rootView, id);
@@ -67,8 +67,7 @@ public final class FragmentStartOrderBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentStartOrderBinding((ConstraintLayout) rootView, layoutStartOrder,
-          startOrderBtn);
+      return new FragmentStartOrderBinding((ConstraintLayout) rootView, startOrder, startOrderBtn);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
