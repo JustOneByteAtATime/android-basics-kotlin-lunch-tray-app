@@ -296,7 +296,7 @@ public class FragmentAccompanimentMenuBindingImpl extends FragmentAccompanimentM
 
 
 
-                    viewModel.setAccompaniment(berries.getResources().getString(R.string.berries));
+                    viewModel.setAccompaniment("bread");
                 }
                 break;
             }
@@ -332,7 +332,7 @@ public class FragmentAccompanimentMenuBindingImpl extends FragmentAccompanimentM
 
 
 
-                    viewModel.setAccompaniment(bread.getResources().getString(R.string.bread));
+                    viewModel.setAccompaniment("bread");
                 }
                 break;
             }

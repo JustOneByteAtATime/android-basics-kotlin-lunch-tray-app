@@ -296,7 +296,7 @@ public class FragmentEntreeMenuBindingImpl extends FragmentEntreeMenuBinding imp
 
 
 
-                    viewModel.setEntree(skillet.getResources().getString(R.string.skillet));
+                    viewModel.setEntree("skillet");
                 }
                 break;
             }
@@ -314,7 +314,7 @@ public class FragmentEntreeMenuBindingImpl extends FragmentEntreeMenuBinding imp
 
 
 
-                    viewModel.setEntree(chili.getResources().getString(R.string.chili));
+                    viewModel.setEntree("chili");
                 }
                 break;
             }
@@ -332,7 +332,7 @@ public class FragmentEntreeMenuBindingImpl extends FragmentEntreeMenuBinding imp
 
 
 
-                    viewModel.setEntree(pasta.getResources().getString(R.string.pasta));
+                    viewModel.setEntree("pasta");
                 }
                 break;
             }
@@ -350,7 +350,7 @@ public class FragmentEntreeMenuBindingImpl extends FragmentEntreeMenuBinding imp
 
 
 
-                    viewModel.setEntree(cauliflower.getResources().getString(R.string.cauliflower));
+                    viewModel.setEntree("cauliflower");
                 }
                 break;
             }
